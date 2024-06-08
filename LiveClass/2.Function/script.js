@@ -61,9 +61,10 @@ console.log(sum(1,2,3,4,5,6,7,8,9), 'sum(1,2,3,4,5,6,7,8,9)'); //3
  */
 
  function sum(a,b) {
-    return (a - b);
+
+    console.log("bbbb");
     return (a + b);
  }
 
 const result = sum(100, 80);
-console.log(result);
+console.log(result); 
