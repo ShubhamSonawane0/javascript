@@ -142,6 +142,7 @@ console.log(math.marks + science.marks, 'math + science') //70
 
 */
 
+/*
 // --------------- Pure And Impure ---------------
  
 // THIS IS PURE FUNCTION
@@ -159,3 +160,6 @@ function sum(a, b) {
 
    return a + b;
 }
+
+*/
+
