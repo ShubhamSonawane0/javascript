@@ -45,3 +45,29 @@ console.log(copyarr === arr);
 */
 
 // Deep copy & Shallow copy 
+
+const person = { 
+   name: "arun",
+   class: 12,
+   address: {
+      street: "road 44",
+      pincode: 110044,
+      houseNumber: "3233-c"
+   }
+}
+
+const copyperson = {...person}; //shallow copy
+
+copyperson.name = "shubham";
+copyperson.address.pincode = 400708;
+
+console.log(person, "person");
+console.log(copyperson, "copyperson");
+
+
+// Trick
+
+const copyperson2 = JSON.parse(JSON.stringify(person));
+
+copyperson2.address.pincode = 111111;
+console.log(copyperson2, "copyperson2");
