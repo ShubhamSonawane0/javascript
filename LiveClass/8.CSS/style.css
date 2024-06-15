@@ -1,0 +1,17 @@
+
+/* ------- Tag selector ---------
+
+
+h1{
+    color: red;
+}
+*/
+
+#hello{
+    background-color: blue;
+    color: red;
+}
+
+#bye{
+    background-color: brown;
+}
