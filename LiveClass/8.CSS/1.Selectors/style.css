@@ -1,0 +1,115 @@
+
+/* ------- Tag selector ---------
+
+
+h1{
+    color: red;
+}
+*/
+
+#hello{
+    background-color: blue;
+    color: red;
+}
+
+#bye{
+    background-color: brown;
+}
+
+.cricket{
+    background-color: blueviolet;
+}
+/*
+.article p {
+    background-color: red;
+}
+*/
+.article > p {
+    background-color: red;
+}
+
+/* Adjacent Siblings (+) 
+
+.article + p {
+    background-color: blue;
+}
+*/
+
+/* General sibling selector (~) */
+
+/* .article ~ p {
+    background-color: blue;
+} */
+
+ /* .div ~ p {
+    background-color: blue;
+} */
+
+/* .article ~ .para {
+    background-color: blue;
+} */
+
+
+/* ----------pseudo selector --------------------*/
+/* #sqilco:link {
+    color: yellow;
+}
+
+#google:visited {
+    color: aqua;
+} */
+
+/* a:active {
+    color: yellow;
+} */
+
+/* ---------- Attribute selector --------------------*/
+/* 
+1. if we want to check the value is starting from some string
+syntax
+[attribute^=value]
+
+*/
+
+
+
+[class^="sport"] {
+    background-color: red;
+}
+
+/* 
+2. if we want to check the value is starting from last string
+syntax
+[attribute$=value]
+*/
+
+[class$="sport"] {
+    background-color: yellow;
+}
+
+/* 
+3. if we want to check the value is in the string
+syntax
+[attribute*=value]
+*/
+
+[class*="sport"] {
+    background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
