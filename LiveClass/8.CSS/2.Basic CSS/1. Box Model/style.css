@@ -1,0 +1,56 @@
+/* .container {
+
+height: 50px;
+width: 60px;
+
+
+
+
+    border: 5px solid black;
+    margin: 10px;
+    padding: 10px;
+} */
+/* answer 90 80 */
+
+
+
+
+/* .container {
+
+    height: 50px;
+    width: 60px;
+    
+    
+    
+    
+        border: 5px solid black;
+        margin-top: 10px;
+        padding-right: 10px;
+    } */
+
+    /* answer 80 60 */
+
+    /* .container {
+        box-sizing: border-box;
+         
+        height: 50px;
+        width: 60px;
+
+        border: 5px solid black;
+        margin-top: 10px;
+        padding-right: 10px;
+    } */
+/* answer 70 60 */
+
+.container {
+    box-sizing: border-box;
+     
+    height: 50px;
+    width: 60px;
+
+    border: 10px solid black;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+ 

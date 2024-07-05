@@ -1,0 +1,40 @@
+.container {
+    /* border-width: 1px;
+    border-color: black;
+    border-style: solid; */
+
+border: 1px solid black;
+border-radius: 10px;
+}
+
+/* 2. margin */
+.container {
+    margin: 50px;
+
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 11px;
+    margin-bottom: 12px;
+}
+
+/* 3. Padding */
+
+.container {
+    padding: 10px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* 4. Colors */
+
+.container {
+    /* background-color: red; */
+    background-color: #710102;
+}
+
+/* 5. Box Model */
+
+
