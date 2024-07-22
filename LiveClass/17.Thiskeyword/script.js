@@ -71,6 +71,9 @@ foo(); // is this a call site ? YES
 
 // 2. Implicit Binding
 
+// Example 1:
+
+/* 
 const obj = {
   name: "shubham",
   class:12,
@@ -83,9 +86,131 @@ const obj = {
   },
 };
 obj.func();
+*/
+
+// Example 2:
+/* 
+let obj = {
+  name: "shubham",
+  rollNumber:12,
+  func: function () {
+    console.log(this, "context");
+    console.log(`hello my name is ${this.name}`);
+  },
+};
+
+const funcCopy = obj.func;
+funcCopy()
+*/
+
+// Example 3: Multiple Information
+
+/* 
+let obj2 = {
+  name: "shubham",
+  func: function () {
+    console.log(`hello ..... ${this.name}`);
+  }
+};
+
+let obj1 = {
+  name: "sumit",
+  rollNumber: 99,
+  obj2: obj2,
+};
+
+obj1.obj2.func();
+*/
+
+// 3. Explicit Binding
+
+/*
+   In here user/developer is doing the hard work 
 
 
+*/
 
+// Example 1: Call
+
+/* 
+const obj1 = {
+  name: "shubham",
+  rollNumber: 99,
+  func: function (a,b) {
+    console.log("context", this);
+    console.log(this.name, a, b);
+  }
+};
+
+let obj2 = {
+  name: "sumit",
+  rollNumber: 1,
+  
+};
+
+obj1.func(1,2);
+
+obj1.func.call(obj2, 22, 222);
+*/
+
+
+// Example 2: Apply
+
+/* 
+const obj1 = {
+  name: "shubham",
+  rollNumber: 99,
+  func: function (a,b) {
+    console.log("context", this);
+    console.log(this.name, a, b);
+  }
+};
+
+let obj2 = {
+  name: "sumit",
+  rollNumber: 1,
+  
+};
+
+obj1.func(1,2);
+
+obj1.func.call(obj2, 22, 222);
+obj1.func.apply(obj2, 22, 222);
+*/
+
+// Example 3: Bind
+ 
+/* */
+const obj = {
+  name: "shubham",
+  func: function (a, b) {
+    console.log(this);
+    console.log(`Hello ... ${this.name}`, a, b);
+  },
+
+  func2: function () {
+    console.log("hello FromFunction 2");
+  },
+};
+
+
+const funcCopy = obj.func.bind(obj);
+
+setTimeout(funcCopy, 5000);
+setTimeout(obj.func, 5000);
+
+
+// 4. New Binding
+
+function car (name, speed, model) {
+  this.name = name;
+  this.speed = speed;
+  this.model = model;
+}
+
+const Ferrari = new car("ferrari", 280, "v8");
+
+console.log(Ferrari);.
 
 
 
