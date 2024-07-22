@@ -106,10 +106,18 @@ syntax
 
 
 
+/* CSS Specificity */
 
+/* Rule 1. fight Among the place of css. */
 
+/* 
+Position 1. In line CSS
+Position 2. Style tag will Win 
+Position 3. External CSS Will Win  
+*/
 
-
-
-
+/* .para {
+    color: green
+} */
+ 
 
