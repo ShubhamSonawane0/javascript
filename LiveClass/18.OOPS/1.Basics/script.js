@@ -251,4 +251,44 @@ andromedaSun.name = "NORMAL sun";
 console.log(andromedaSun);
 */
 
-// --------
+// ---------------- Instance Vs Static Properties ----------------
+
+/* 
+class Circle {
+  radius
+
+  constructor(r) {
+    this.radius = r;
+  }
+
+  // NORMAL METHOD
+
+  draw() {
+    console.log("draw circle of", this.radius);
+  }
+
+    // STATIC METHOD
+
+    static parse() {
+      console.log(`hello this is static parse`);
+    }
+  
+}
+
+const c1 = new Circle(100);
+console.log(c1);
+c1.draw();
+
+// c1 is INSTANCE OF CIRCLE CLASS.
+// draw, radius these are instance properties.
+
+
+Circle.parse();
+// Circle.draw(); // this will not work
+*/
+
+// --------------- check instance -----------
+
+console.log(c1 instanceof Circle);
+
+
